@@ -9,7 +9,7 @@
 	background-color: $accent
 	color: #fff
 *
-	outline:none
+	outline: none
 input, textarea
 	outline: none
 	&:focus:required:invalid
@@ -25,21 +25,240 @@ body
 	font-family: 'Roboto', sans-serif
 	overflow-x: hidden
 	color: $text
-
+	background: #0A090A
+	color: #ffffff
+	background-image: url(../img/main-bg.png)
+	background-position: top center
+	background-repeat: no-repeat
 // Custom Sass / Remove before use
 
 .container
 	max-width: 1140px
-	margin:
-		left: auto
-		right: auto
+	margin: 0 auto
+	width: 90%
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
 
-	
 .example-img
 	width: 100%
 
+.header
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding-top: 45px
+	font-family: 'Roboto', sans-serif
+	margin-bottom: 30%
+
+	.logo
+		font-weight: 900
+		display: inline-block
+		line-height: 28px
+		text-decoration: none
+		color: #ffffff
+		font-size: 24px
+	.search
+		display: flex
+		align-items: center
+		flex: 0.8
+		input
+			display: inline-block
+			height: 40px
+			border: none
+			background-color: rgba(196, 196, 196, 0.5)
+			font-weight: 400
+			border-radius: 5px
+			color: #AEAEAE
+			flex: 1
+			font-size: 14px
+			line-height: 16px
+			padding: 12px 18px
+			&::placeholder
+				color: #AEAEAE
+		.btn-search
+			background: transparent
+			border: none
+			padding: 10px 18px
+
+	.user
+		display: flex
+		align-items: center
+		.avatar
+			border-radius: 50%
+			margin-left: 20px
+			width: 40px
+			height: 40px
+			object-fit: cover
+
+.title
+	font-family: PlayfairDisplay
+	font-weight: normal
+	font-size: 48px
+	line-height: 64px
+	margin: 0
+	margin-bottom: 7px
+.title-en
+	font-size: 20px
+	line-height: 23px
+	color: #787878
+	display: inline-block
+	margin-bottom: 38px
+.info
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin-bottom: 110px
+	
+	a
+		text-decoration: none
+		color: #ffffff
+		font-size: 16px
+		line-height: 19px
+.movie-info
+	display: flex
+	align-items: center
+	.tag
+		display: inline-block
+		line-height: 19px
+		color: #333333
+		border-radius: 3px
+		background-color: #fff
+		padding: 5px 10px
+		margin-right: 20px
+
+	.country
+		line-height: 19px
+		margin-right: 33px
+	.play
+		display: flex
+		align-items: center
+		&::before
+			content: ''
+			width: 30px
+			height: 30px
+			background-image: url(../img/play.svg)
+			background-repeat: no-repeat
+			background-size: 100%
+			margin-right: 15px
+
+.more
+	display: flex
+	align-items: center
+	&::after
+		content: ''
+		width: 30px
+		height: 30px
+		background-image: url(../img/play.svg)
+		background-repeat: no-repeat
+		background-size: 100%
+		margin-left: 15px
+		transform: rotate(90deg)
+.content
+	background-color: #fff
+	border-radius: 3px
+	color: #000
+	padding: 43px 50px 83px 50px
+	display: flex
+	justify-content: space-between
+	.short-info
+		margin-right: 35px
+		
+		.poster
+			margin-top: -80px
+			display: block
+			margin-bottom: 20px
+		.button
+			background-color: #ff8f27
+			display: inline-block
+			font-size: 14px
+			padding: 10px 44px
+			text-align: center
+			line-height: 16px
+			border: none
+			color: #ffffff
+			margin-bottom: 30px
+		h3
+			font-weight: 900
+			padding-left: 15px
+			font-size: 16px
+			line-height: 150%
+			margin-bottom: 10px
+		ul
+			list-style: none
+			padding-left: 15px
+			li
+				text-decoration-line: underline
+.full-info
+	
+
+	.info-tabs
+		margin-bottom: 40px
+		.tabs-active
+			color: #ff8f27
+		a
+			text-decoration: none
+			color: #000
+			margin-right: 35px
+			font-size: 16px
+			line-height: 21px
+			&:hover
+				color: #ff8f27
+		
+			.bookmark-added
+				margin-left: 35px
+.full-content
+	display: flex
+	justify-content: space-between
+
+
+	.tabs-content
+		margin-right: 78px
+		line-height: 140%
+		font-size: 16px
+		p
+			line-height: 140%
+			margin-bottom: 33px
+		h4
+			margin-bottom: 23px
+
+.subscribe
+	
+	.subscribe-title
+		font-size: 16px
+		font-weight: 900
+		margin-bottom: 14px
+	.subscribe-form
+		display: flex
+		margin-bottom: 48px
+		input
+			background: rgba(241, 241, 241, 0.5)
+			border: none
+			padding: 12px 15px 12px 15px
+			border-radius: 5px 0px 0px 5px
+			display: inline-block
+			max-width: 176px
+			font-size: 14px
+			line-height: 16px
+			color: #9B9B9B
+			&::placeholder
+				font-size: 14px
+				line-height: 16px
+				color: #9B9B9B
+		button
+			background: #FF8F27
+			border: none
+			border-radius: 0px 5px 5px 0px
+			padding: 12px 11px 
+			outline: none
+			display: inline-block
+			
+			
+			
+	.banner-items
+
+		
+
+		
