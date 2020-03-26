@@ -30,12 +30,14 @@ body
 	background-image: url(../img/main-bg.png)
 	background-position: top center
 	background-repeat: no-repeat
+	background-size: contain
 // Custom Sass / Remove before use
 
 .container
 	max-width: 1140px
 	margin: 0 auto
 	width: 95%
+	overflow: hidden
 
 .img-responsive
 	display: block
@@ -195,21 +197,29 @@ body
 			.actors-list-item
 				cursor: pointer
 .full-info	
+	
 	.info-tabs
+		display: flex
+		align-items: center
+		flex-wrap: wrap
 		margin-bottom: 40px
 		.tabs-active
 			color: #ff8f27
 		a
 			text-decoration: none
 			color: #000
-			margin-right: 35px
-			font-size: 16px
+			font-size: 18px
 			line-height: 21px
 			&:hover
 				color: #ff8f27
+		.tabs_link
+			&:not(:last-child)
+				margin-right: 40px
+				
+				
 		
-			.bookmark-added
-				margin-left: 35px
+				
+
 .full-content
 	display: flex
 	justify-content: space-between
@@ -220,6 +230,7 @@ body
 		line-height: 140%
 		font-size: 16px
 		p
+			margin: 0
 			line-height: 140%
 			margin-bottom: 33px
 		h4
