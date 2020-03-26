@@ -1,17 +1,94 @@
-@media screen and (max-width: 950px)
-  
+@media screen and (max-width: 1200px)
+  .content
+    padding: 4% 3% 6% 3%
   .full-info 
     display: flex
     flex-wrap: wrap
     .info-tabs
       display: flex
-      flex-direction: column
-      flex-basis: 100%
-      align-items: start
+      align-items: center
       a
         margin-top: 10px
         line-height: 21px
+        font-size: 16px
+
+@media screen and (max-width: 992px)  
+  .container
+    width: 80%
+  .full-info 
+    display: flex
+    flex-wrap: wrap
+    .info-tabs
+      display: flex
+      flex-wrap: wrap
+      .tabs_link
+        flex-basis: 20%
+        margin-top: 10px
+        line-height: 21px
+        font-size: 16px
   .full-content
     flex-wrap: wrap
   .subscribe    
-    flex-basis: 100%
+
+  .full-content .tabs-content
+    margin: 0
+    p
+      font-size: 14px
+  .content .short-info ul .actors-list-item
+    font-size: 14px
+
+@media screen and (max-width: 768px) 
+  body
+    background-size: auto
+  .info
+    .more
+      display: none
+  .full-info .info-tabs .tabs_link
+    flex-basis: 33%
+@media screen and (max-width: 576px) 
+
+  .container
+    width: 90%
+  .header 
+    flex-wrap: wrap
+    .search
+      flex-basis: 100%
+      order: 3
+      margin-top: 34px
+  .full-info .info-tabs
+    flex-basis: 20%
+    margin-bottom: 34px
+  .content
+    flex-wrap: wrap
+  .content 
+    .short-info 
+      h3
+        display: none
+      ul
+        display: none
+  .content 
+    padding: 0 18px 60px  18px
+    .short-info 
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      margin: 0
+      .poster
+        margin-top: -12%
+        width: 100%
+      .button
+        width: 100%        
+    .tabs-content
+      margin-bottom: 37px
+  .subscribe
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+  .movie-info
+    flex-wrap: wrap
+    
+    .play
+      margin-top: 26px
+      flex-basis: 100%
+
+
