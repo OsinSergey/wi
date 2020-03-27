@@ -31,6 +31,7 @@ body
 	background-position: top center
 	background-repeat: no-repeat
 	background-size: contain
+	
 // Custom Sass / Remove before use
 
 .container
@@ -166,6 +167,7 @@ body
 	padding: 4% 5% 7% 5%
 	display: flex
 	justify-content: space-between
+	
 	.short-info
 		margin-right: 4%		
 		.poster
@@ -195,10 +197,12 @@ body
 				text-decoration-line: underline
 			.actors-list-item
 				cursor: pointer
-.full-info		
+.full-info
+	width: 100%		
 	.info-tabs
 		display: flex
 		margin-bottom: 4%
+		
 		.tabs-active
 			color: #ff8f27
 		a
@@ -206,6 +210,7 @@ body
 			color: #000
 			font-size: 18px
 			line-height: 21px
+			
 			&:hover
 				color: #ff8f27
 		.tabs_link
@@ -225,13 +230,18 @@ body
 		margin-right: 78px
 		line-height: 140%
 		font-size: 16px
+
+
 		p
 			margin: 0
 			line-height: 140%
 			margin-bottom: 5%
 		h4
 			margin-bottom: 23px
-
+.tabs-content
+	display: none
+.visible
+	display: block 
 .subscribe
 	
 	.subscribe-title
