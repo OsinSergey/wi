@@ -21,9 +21,12 @@
 		"gulp-responsive": "^3.0.1",
 		"gulp-rsync": "0.0.8",
 		"gulp-sass": "^4.0.2",
-		"gulp-uglify-es": "^2.0.0"
+		"gulp-uglify-es": "^2.0.0",
+		"jquery": "^3.4.1"
 	},
 	"dependencies": {
-		"jshint": "^2.11.0"
+		"animate.css": "^3.7.2",
+		"jshint": "^2.11.0",
+		"wowjs": "^1.1.3"
 	}
 }
