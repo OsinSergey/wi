@@ -13,9 +13,15 @@ tabsItem.on('click', function(e){
 
 });
 
-	
+new WOW().init();
 
-
+var $page = $('html, body');
+$('a[href*="#content"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+    return false;
+});
 
 	// Custom JS
 

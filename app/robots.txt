@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /
+User-agent: Yandex
+Disallow: /
+User-Agent: *
+Disallow: *.jpg
+Disallow: *.png
+Disallow: *.gif
